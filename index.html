@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Day 18 - paint</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container_tools">
+            <div class="container_wap">
+                <label for="container_wap-incress" id="container_wap-incress">Grid width
+                    <div class="container-box1">
+                        <input type="range" id="container_wap-incress" min="1" max="1">
+                        <span>00</span>
+                    </div>
+                </label>
+                <label for="container_wap-uncress" id="container_wap-uncress">Grid height
+                    <div class="container-box1">
+                        <input type="range" id="container_wap-uncress" min="1" max="1">
+                        <span>00</span>
+                    </div>
+                </label>
+            </div>
+            <div class="container_btn">
+                <button id="container_btn-createGrid">Create Grid</button>
+                <button id="container_btn-ClearGrid">Clear Grid</button>
+                <input type="color" id="container_btn-input">
+                <button id="container_btn-erase">Erase</button>
+                <button id="container_btn-PaintGrid">Paint</button>
+            </div>
+        </div>
+        <div class="container_paint">
+            <canvas></canvas>
+        </div>
+    </div>
+    <script src="paint.js"></script>
+</body>
+</html>
